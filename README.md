@@ -2,7 +2,7 @@
 
 > Generates a simple web project.
 
-It's for times:
+It's for occasions:
 
 * when you just need a simple index.html and a few dependencies such as bootstrap or jquery.
 * when the task is to simple for a complex file struture.
@@ -10,7 +10,7 @@ It's for times:
 
 Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
 
-For large web projects, check out [Yeoman](http://yeoman.io/)
+If you'r starting a larger web projects, check out [Yeoman](http://yeoman.io/) instead.
 
 ## Install
 
