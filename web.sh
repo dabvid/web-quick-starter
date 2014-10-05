@@ -34,8 +34,8 @@ if [ "$1" == "angular-parse" ]; then
         mkdir ~/Desktop/simple-angular
         cd ~/Desktop/simple-angular
     else
-        mkdir project
-        cd project
+        mkdir simple-angular
+        cd simple-angular
     fi
 
     html="<!DOCTYPE html>\n"
@@ -76,9 +76,9 @@ if [ "$1" == "angular-parse" ]; then
     web add parse-angular-patch
     npm install parse --save-dep
 
-    echo "------------------------------------------------------------------------------------------"
-    echo "Success! A simple web project with AngularJS was created in a folder named 'simple-web'---"
-    echo "------------------------------------------------------------------------------------------"
+    echo "----------------------------------------------------------------------------------------------"
+    echo "Success! A simple web project with AngularJS was created in a folder named 'simple-angular'---"
+    echo "----------------------------------------------------------------------------------------------"
 fi
 if [ "$1" == "add" ]; then
     bower install --save $2
