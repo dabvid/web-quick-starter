@@ -1,6 +1,6 @@
 # Web quick starter
 
-> A simple web structure without all the fuzz.
+> A web structure without the fuzz.
 
 It's for times:
 
