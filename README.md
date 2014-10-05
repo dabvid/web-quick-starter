@@ -8,13 +8,13 @@ It's for times:
 * when the task is to simple for a complex file struture.
 * when build system and task runners feels to heavy.
 
-Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io) and [git](http://git-scm.com/)
+Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
 
 ## Install
 
 ```sh
     git clone https://github.com/dabvid/web-quick-starter.git
-    . web-quick-starter/install.sh
+    sudo . web-quick-starter/install.sh
 ```
 
 ## Usage
