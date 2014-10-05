@@ -2,11 +2,11 @@
 
 if [ "$1" == "simple" ]; then
     if [ "$2" == "-desk" ]; then
-        mkdir ~/Desktop/web
-        cd ~/Desktop/web
+        mkdir ~/Desktop/simple-web
+        cd ~/Desktop/simple-web
     else
-        mkdir web
-        cd web
+        mkdir simple-web
+        cd simple-web
     fi
 
     html="<!DOCTYPE html>\n"
@@ -25,14 +25,14 @@ if [ "$1" == "simple" ]; then
     echo -e "{\"name\":\"web\"}" > bower.json
 
     echo "------------------------------------------------------------------------------"
-    echo "Success! A simple web project was created"
+    echo "Success! A simple web project was created in a folder named 'simple-web'"
     echo "------------------------------------------------------------------------------"
 fi
 if [ "$1" == "angular" ]; then
 
     if [ "$2" == "-desk" ]; then
-        mkdir ~/Desktop/project
-        cd ~/Desktop/project
+        mkdir ~/Desktop/simple-angular
+        cd ~/Desktop/simple-angular
     else
         mkdir project
         cd project
@@ -76,9 +76,9 @@ if [ "$1" == "angular" ]; then
     web add parse-angular-patch
     npm install parse --save-dep
 
-    echo "------------------------------------------------------------------------------"
-    echo "Success! A simple web project was created on your Desktop"
-    echo "------------------------------------------------------------------------------"
+    echo "------------------------------------------------------------------------------------------"
+    echo "Success! A simple web project with AngularJS was created in a folder named 'simple-web'---"
+    echo "------------------------------------------------------------------------------------------"
 fi
 if [ "$1" == "add" ]; then
     bower install --save $2
