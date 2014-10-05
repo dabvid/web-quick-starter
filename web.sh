@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" == "clean" ]; then
+if [ "$1" == "simple" ]; then
     if [ "$2" == "-desk" ]; then
         mkdir ~/Desktop/web
         cd ~/Desktop/web
@@ -24,9 +24,8 @@ if [ "$1" == "clean" ]; then
     echo -e $html > index.html
     echo -e "{\"name\":\"web\"}" > bower.json
 
-    clear
     echo "------------------------------------------------------------------------------"
-    echo "Skriv ´web add jquery´ för att injicera jquery i din index.html"
+    echo "Success! A simple web project was created"
     echo "------------------------------------------------------------------------------"
 fi
 if [ "$1" == "angular" ]; then
@@ -77,9 +76,8 @@ if [ "$1" == "angular" ]; then
     web add parse-angular-patch
     npm install parse --save-dep
 
-    clear
     echo "------------------------------------------------------------------------------"
-    echo "Skriv ´web add jquery´ för att injicera jquery i din index.html"
+    echo "Success! A simple web project was created on your Desktop"
     echo "------------------------------------------------------------------------------"
 fi
 if [ "$1" == "add" ]; then
@@ -112,3 +110,4 @@ if [ -z "$1" ] || [ "$1" == "help" ]; then
     echo -ne "\n"
     echo "Web depends on NodeJS and Bower."
 fi
+

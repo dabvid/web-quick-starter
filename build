@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp web.sh web
+chmod 555 web
+mv web /usr/local/bin
