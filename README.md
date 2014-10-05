@@ -8,7 +8,10 @@ It's for occasions:
 * when the task is to simple for a complex file struture.
 * when build system and task runners feels to heavy.
 
+
 Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
+
+Dependency managment are handled with Bower.
 
 If you'r starting a larger web projects, check out [Yeoman](http://yeoman.io/) instead.
 
@@ -28,8 +31,8 @@ $ web simple
 # Initiate a minimal web project on your OSX Desktop
 $ web simple -desk
 
-# Initiate a minimal web project with AngularJS
-$ web angular
+# Initiate a minimal web project with AngularJS and Parse.
+$ web angular-parse
 
 # Search for a dependency eg. jquery
 $ web search jquery

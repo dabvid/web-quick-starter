@@ -1,0 +1,10 @@
+{
+  "name": "web",
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-animate": "~1.2.26",
+    "angular-route": "~1.2.26",
+    "ng-file-upload": "~1.6.12",
+    "parse-angular-patch": "*"
+  }
+}

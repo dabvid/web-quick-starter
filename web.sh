@@ -28,7 +28,7 @@ if [ "$1" == "simple" ]; then
     echo "Success! A simple web project was created in a folder named 'simple-web'"
     echo "------------------------------------------------------------------------------"
 fi
-if [ "$1" == "angular" ]; then
+if [ "$1" == "angular-parse" ]; then
 
     if [ "$2" == "-desk" ]; then
         mkdir ~/Desktop/simple-angular
@@ -99,7 +99,7 @@ if [ -z "$1" ] || [ "$1" == "help" ]; then
     echo "Commands:"
     echo -ne "\n"
     echo -e "\tsimple\t\tInitiate a minimal web project"
-    echo -e "\tangular\t\tInitiate a minimal web project with AngularJS"
+    echo -e "\tangular-parse\tInitiate a minimal web project with AngularJS"
     echo -e "\tadd\t\tAdd dependency eg. Jquery"
     echo -e "\tupdate\t\tUpdate all dependencies in your web project"
     echo -e "\tsearch\t\tSearch for dependency eg. Jquery"
