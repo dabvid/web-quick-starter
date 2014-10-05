@@ -1,6 +1,6 @@
 # Web quick starter
 
-> A web structure without the fuzz.
+> Generates a simple web project.
 
 It's for times:
 
@@ -9,6 +9,8 @@ It's for times:
 * when build system and task runners feels to heavy.
 
 Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
+
+For large web projects, check out [Yeoman](http://yeoman.io/)
 
 ## Install
 
@@ -29,6 +31,12 @@ $ web simple -desk
 # Initiate a minimal web project with AngularJS
 $ web angular
 
-# install a package and inject script src tags to index.html
+# Search for a dependency eg. jquery
+$ web search jquery
+
+# install jquery and inject script src tags to index.html
 $ web add jquery
+
+# update all dependencies
+$ web update
 ```
