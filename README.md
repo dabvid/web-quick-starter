@@ -13,7 +13,8 @@ Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower
 ## Install
 
 ```sh
-    git clone https://github.com/dabvid/web-quick-starter.git | . install.sh
+    git clone https://github.com/dabvid/web-quick-starter.git
+    . web-quick-starter/install.sh
 ```
 
 ## Usage
