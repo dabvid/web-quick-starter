@@ -1,8 +1,7 @@
 #!/bin/bash
-
-cp web-quick-starter/web.sh web-quick-starter/web
-chmod 555 web-quick-starter/web
-mv web-quick-starter/web /usr/local/bin
+cd web-quick-starter
+source build
+cd ..
 rm -rf web-quick-starter
 npm install wiredep -g
 

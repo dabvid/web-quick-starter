@@ -2,24 +2,24 @@
 
 > Generates a simple web project.
 
-It's for occasions:
+For occasions:
 
-* when you just need a simple index.html and a few dependencies such as bootstrap or jquery.
+* when you just need a simple index.html and an easy way to add latest versions of dependencies such as jquery, less and bootstrap.
 * when the task is to simple for a complex file struture.
-* when build system and task runners feels to heavy.
+* when build system and task runners seems to heavy.
 
 
 Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
 
 Dependency managment are handled with Bower.
 
-If you'r starting a larger web projects, check out [Yeoman](http://yeoman.io/) instead.
+If you'r starting out a potentially large web project, check out [Yeoman](http://yeoman.io/) instead.
 
 ## Install
 
 ```sh
     git clone https://github.com/dabvid/web-quick-starter.git
-    sudo bash web-quick-starter/install.sh
+    sudo bash web-quick-starter/install
 ```
 
 ## Usage
