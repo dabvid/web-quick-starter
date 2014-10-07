@@ -84,15 +84,15 @@ Usage:
 
 Commands:
 
-	simple	    	Initiate a minimal web project
-	angular-parse	Initiate a minimal web project with AngularJS
-	add		        Add dependency eg. Jquery
-	update		    Update all dependencies in your web project
-	search		    Search for dependency eg. Jquery
+	simple	        	    Initiate a minimal web project
+	angular-parse               Initiate a minimal web project with AngularJS
+	add                         Add dependency eg. Jquery
+	update		            Update all dependencies in your web project
+	search		            Search for dependency eg. Jquery
 
 Options:
 
-	-desk		Generates the project on your OSX Desktop
+	-desk		            Generates the project on your OSX Desktop
 
 Web depends on NodeJS and Bower.
 _EOF_
