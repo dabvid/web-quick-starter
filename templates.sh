@@ -43,8 +43,8 @@ cat >> index.html <<- _EOF_
         <!-- bower:js -->
         <!-- endbower -->
         <script src='main.js'></script>
-    <title>Angular-Parse Template</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Angular-Parse Template</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body ng-controller='AppController'>
     </body>
