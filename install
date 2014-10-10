@@ -3,6 +3,7 @@ cd web-quick-starter
 source build
 cd ..
 rm -rf web-quick-starter
+npm install bower -g
 npm install wiredep -g
 
 echo "------------------------------------------------------------------------------"

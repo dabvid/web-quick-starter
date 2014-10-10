@@ -17,6 +17,8 @@ If you'r starting out a potentially large web project, check out [Yeoman](http:/
 
 ## Install
 
+You need to install [Node.js](http://nodejs.org/) before installing Web quick starter.
+
 ```sh
     git clone https://github.com/dabvid/web-quick-starter.git
     sudo bash web-quick-starter/install
