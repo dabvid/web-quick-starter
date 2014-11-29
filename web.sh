@@ -42,7 +42,7 @@ if [ "$1" == "angular-parse" ]; then
     web add angular-route
     web add ng-file-upload
     web add parse-angular-patch
-    npm install parse --save-dep
+    sudo npm install parse --save-dep
 
     echo "----------------------------------------------------------------------------------------------"
     echo "Success! A simple web project with AngularJS was created in a folder named 'simple-angular'---"
