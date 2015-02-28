@@ -6,8 +6,10 @@
 
 generateSimple () {
 cat >> index.html <<- _EOF_
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <meta charset="UTF-8">
+    <head lang="en">
     <head>
         <!-- bower:css -->
         <!-- endbower -->
@@ -33,10 +35,11 @@ _EOF_
 
 generateAngularParse () {
 cat >> index.html <<- _EOF_
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app='app'>
     <head>
         <meta charset='UTF-8'>
+        <head lang="en">
         <script src='node_modules/parse/build/parse-latest.js'></script>
         <!-- bower:css -->
         <!-- endbower -->
