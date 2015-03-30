@@ -28,13 +28,16 @@ You need to install [Node.js](http://nodejs.org/) before installing Web quick st
 
 ```sh
 # Initiate a minimal web project
-$ web simple
+$ web new simple
 
 # Initiate a minimal web project on your OSX Desktop
-$ web simple -desk
+$ web new simple -desk
 
 # Initiate a minimal web project with AngularJS and Parse.
-$ web angular-parse
+$ web new angular-parse
+
+# Initiate a minimal web project with React and Parse. Also uses gulp for watching changes and transforming JSX to Javascript.
+$ web new react-parse
 
 # Search for a dependency eg. jquery
 $ web search jquery

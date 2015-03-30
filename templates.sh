@@ -78,6 +78,131 @@ body {
 _EOF_
 }
 
+generateReactParse () {
+cat >> index.html <<- _EOF_
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <head lang="en">
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- bower:js -->
+        <!-- endbower -->
+        <title>React-Parse Template</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="build/app.js"></script>
+    </body>
+</html>
+_EOF_
+
+cat >> js/app.js <<- _EOF_
+var React = window.React = require('react');
+var Parse = window.Parse = require('parse').Parse;
+var ParseReact = require('parse-react');
+
+Parse.initialize('APP_ID', 'JAVASCRIPT_CLIENT_ID');
+
+var Todos = React.createClass({
+
+    //Inherits methods from official ParseReact.Mixin
+    mixins: [ParseReact.Mixin],
+
+    //Observe belongs to ParseReact. Takes a query and stores result in this.data
+    observe: function() {
+        return {
+            Todos: (new Parse.Query('Todo')).ascending('createdAt')
+        };
+    },
+
+    //Button add event listener
+    add: function(e){
+        ParseReact.Mutation.Create('Todo', {
+            title: this.refs.input.getDOMNode().value
+        }).dispatch();
+    },
+
+    //Renders list of todos
+    render: function(){
+        var todos = this.data.todos.map(function(item){
+            return <Todo key={ item.id } title={ item.title } />
+        });
+
+        return (
+            <div>
+                <input ref="input" type="text" />
+                <button onClick={ this.add }>Add</button>
+                <ul>
+                    { todos }
+                </ul>
+            </div>
+        )
+    }
+});
+
+var Todo = React.createClass({
+    render: function(){
+        return (
+            <li>{ this.props.title }</li>
+        )
+    }
+});
+
+React.render(<Todos />, document.getElementById('app'));
+_EOF_
+
+cat >> css/style.css <<- _EOF_
+body {
+    background: white;
+}
+_EOF_
+
+cat >> gulpfile.js <<- _EOF_
+'use strict';
+
+var gulp = require('gulp');
+var watch = require('gulp-watch');
+var browserify = require('gulp-browserify');
+var react = require('gulp-react');
+
+gulp.task('default', function(){
+    gulp.src('js/app.js')
+    .pipe(watch('js/*.js'))
+    .pipe(react())
+    .pipe(browserify())
+    .pipe(gulp.dest('build/'));
+});
+_EOF_
+
+cat >> package.json <<- _EOF_
+{
+  "name": "parse-react-simple",
+  "version": "1.0.0",
+  "description": "parse-react-simple web template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo Error: no test specified && exit 1",
+    "start": "gulp serve"
+  },
+  "author": "David Åberg",
+  "license": "ISC",
+  "dependencies": {
+    "react": "latest",
+    "parse": "latest",
+    "parse-react": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-react": "latest",
+    "gulp-browserify": "latest",
+    "gulp-watch": "latest"
+  }
+}
+_EOF_
+}
 
 showHelp () {
 cat <<- _EOF_
