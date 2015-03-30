@@ -1,6 +1,6 @@
 # Web quick starter
 
-> Lightweight web project templates with dynamic dependency injection.
+> Web generator for frontend developers
 
 * Aims to quickly gets you started without having to wrap your head around a large file structure.
 * Lets you add, update and inject dependencies like jQuery, Bootstrap etc. to your index.html
