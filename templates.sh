@@ -114,7 +114,7 @@ var Todos = React.createClass({
     //Observe belongs to ParseReact. Takes a query and stores result in this.data
     observe: function() {
         return {
-            Todos: (new Parse.Query('Todo')).ascending('createdAt')
+            todos: (new Parse.Query('Todo')).ascending('createdAt')
         };
     },
 
