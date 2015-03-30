@@ -6,19 +6,14 @@
 * Lets you add, update and inject dependencies like jQuery, Bootstrap etc. to your index.html
 
 
-# Minimal
-* Just a simple index.html
+##### Minimal
+Just a simple index.html
 
-# Angular with Parse
+##### Angular with Parse
 index.html main.js, style.css and one ng-controller.
 
-# React with Parse
+##### React with Parse
 index.hmtl, app.js, style.css and two React classes with JSX code.
-
-
-If you'r starting out a potentially large web project, check out [Yeoman](http://yeoman.io/) instead.
-
-Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
 
 ## Install
 
@@ -53,3 +48,7 @@ $ web add jquery
 # update dependencies
 $ web update
 ```
+## Note
+If you'r starting out a potentially large web project, you probably should check out [Yeoman](http://yeoman.io/) instead.
+
+Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
