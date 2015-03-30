@@ -2,7 +2,7 @@
 
 > Lightweight web project templates with dynamic dependency injection.
 
-* Quickly gets you started with one of four templates: Minimal, Angular/Parse or React/Parse.
+* Aims to quickly gets you started without having to wrap your head around a large file structure.
 * Lets you add, update and inject dependencies like jQuery, Bootstrap etc. to your index.html
 
 
@@ -14,6 +14,7 @@ index.html main.js, style.css and one ng-controller.
 
 ##### React with Parse
 index.hmtl, app.js, style.css and two React classes with JSX code.
+This project template also uses gulp to let you require modules and will watch js files for changes.
 
 ## Install
 
