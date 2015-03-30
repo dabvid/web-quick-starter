@@ -2,8 +2,9 @@
 
 > Web generator for frontend developers
 
-* Aims to quickly gets you started without having to wrap your head around a large file structure.
-* Lets you add, update and inject dependencies like jQuery, Bootstrap etc. to your index.html
+
+* Generates a bare minimum code structure.
+* Gives the ability to add, update and <b>inject</b> dependencies like jQuery, Bootstrap etc. to your index.html
 
 
 ##### Minimal
