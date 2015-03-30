@@ -1,19 +1,24 @@
 # Web quick starter
 
-> Generates a simple web project.
+> Lightweight web project templates with dynamic dependency injection.
 
-For occasions:
-
-* when you just need a simple index.html and an easy way to add latest versions of dependencies such as jquery, less and bootstrap.
-* when the task is to simple for a complex file struture.
-* when build system and task runners seems to heavy.
+* Quickly gets you started with one of four templates: Minimal, Angular/Parse or React/Parse.
+* Lets you add, update and inject dependencies like jQuery, Bootstrap etc. to your index.html
 
 
-Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
+# Minimal
+* Just a simple index.html
 
-Dependency managment are handled with Bower.
+# Angular with Parse
+index.html main.js, style.css and one ng-controller.
+
+# React with Parse
+index.hmtl, app.js, style.css and two React classes with JSX code.
+
 
 If you'r starting out a potentially large web project, check out [Yeoman](http://yeoman.io/) instead.
+
+Web quick starter depends on [Node.js](http://nodejs.org/), [Bower](http://bower.io), [wiredep](https://github.com/taptapship/wiredep) and [git](http://git-scm.com/)
 
 ## Install
 
@@ -45,6 +50,6 @@ $ web search jquery
 # install jquery and inject script src tags to index.html
 $ web add jquery
 
-# update all dependencies
+# update dependencies
 $ web update
 ```
