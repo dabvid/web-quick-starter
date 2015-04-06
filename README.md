@@ -7,6 +7,9 @@
 * Gives the ability to add, update and <b>inject</b> dependencies like jQuery, Bootstrap etc. to your index.html
 
 
+## Templates
+> All templates are prepared for quick dependency injection.
+
 ##### Minimal
 Just a simple index.html
 
