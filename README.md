@@ -6,7 +6,7 @@
 * Generates a bare minimum code structure.
 * Gives the ability to add, update and <b>inject</b> dependencies like jQuery, Bootstrap etc. to your index.html
 
-###### Example: Dowload and inject jQuery to index.html
+Example: Dowload and inject jQuery to index.html
 
 <code>web add jQuery</code>
 
