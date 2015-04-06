@@ -8,7 +8,7 @@
 
 
 ## Templates
-> All templates are prepared for quick dependency injection.
+> All templates are prepared to use quick dependency injection.
 
 ##### Minimal
 Just a simple index.html
